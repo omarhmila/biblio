@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix de Connexion</title>
+    <style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+
+/* Styles généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Styles des boutons */
+.button {
+    display: block;
+    width: 300px;
+    margin: 40px auto;
+    padding: 18px 36px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.4);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff4b4b;
+    box-shadow: 0 15px 30px rgba(255, 107, 107, 0.6);
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container, .button {
+    animation: fadeInUp 1s ease-in-out;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur le site de la bibliothèque universitaire</h1>
+        <h2>VOUS ÊTES QUI ?</h2>
+        <button class="button" onclick="window.location.href='authentificationAdherents.html'">Adhérent</button>
+        <button class="button" onclick="window.location.href='authentificationBiblio.html'">Bibliothécaire</button>
+    </div>
+</body>
+</html>
